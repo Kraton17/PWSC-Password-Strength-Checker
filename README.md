@@ -39,7 +39,7 @@ pip install -r requirements.txt
 1. Clone the repository to your local machine:
 
     ```bash git clone https://github.com/your-username/PWSC-Password-Strength-Checker.git 
-    cd PWSC-Password-Strength-Checker ```
+    cd PWSC-Password-Strength-Checker```
 
 2. Run the script with the following command:
 
