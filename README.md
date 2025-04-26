@@ -38,8 +38,8 @@ pip install -r requirements.txt
 
 1. Clone the repository to your local machine:
 
-    <pre> ```bash git clone https://github.com/your-username/PWSC-Password-Strength-Checker.git 
-    cd PWSC-Password-Strength-Checker ``` </pre>
+    ```bash git clone https://github.com/your-username/PWSC-Password-Strength-Checker.git 
+    cd PWSC-Password-Strength-Checker ```
 
 2. Run the script with the following command:
 
@@ -69,8 +69,8 @@ pip install -r requirements.txt
 ---
 
 ## Example Output
-
 ```bash
+
   ═══════════════════════════════════════════════════
                Password Strength Checker (PWSC) 
   ═══════════════════════════════════════════════════
@@ -89,8 +89,8 @@ pip install -r requirements.txt
 
   ⚠ Found in 120226 data breaches! Not safe.
 
-  🛡 Estimated Crack Time: Less than a second ⚠ – basically already cracke
-d ═══════════════════════════════════════════════════
+  🛡 Estimated Crack Time: Less than a second ⚠ – basically already cracked
+  ═══════════════════════════════════════════════════
 
   ✨ Suggested Strong Password: Okn81Hg2
 
