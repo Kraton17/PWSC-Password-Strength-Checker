@@ -26,9 +26,9 @@ Before running the project, you need to install the following dependencies:
 
 You can install the dependencies using the following command:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ---
 
@@ -38,16 +38,14 @@ pip install -r requirements.txt
 
 1. Clone the repository to your local machine:
 
-    \`\`\`bash
-    git clone https://github.com/your-username/PWSC-Password-Strength-Checker.git
-    cd PWSC-Password-Strength-Checker
-    \`\`\`
+    <pre> ```bash git clone https://github.com/your-username/PWSC-Password-Strength-Checker.git 
+    cd PWSC-Password-Strength-Checker ``` </pre>
 
 2. Run the script with the following command:
 
-    \`\`\`bash
+    ```bash
     python pwsc.py
-    \`\`\`
+    ```
 
 3. Enter a password when prompted, and the tool will display its strength, any issues, estimated crack time, and if it's been breached. If necessary, it will also suggest a stronger password.
 
@@ -72,29 +70,40 @@ pip install -r requirements.txt
 
 ## Example Output
 
-\`\`\`
-═══════════════════════════════════════════════════
-     Password Strength Checker (PWSC) 
-═══════════════════════════════════════════════════
-[+] Enter your password to check:
+```bash
+  ═══════════════════════════════════════════════════
+               Password Strength Checker (PWSC) 
+  ═══════════════════════════════════════════════════
 
-Nishad
+  Password Strength: 2/10 - Digital Paper Bag 💀
+    → A toddler with a dictionary could break this in seconds
+  ═══════════════════════════════════════════════════
 
-Password Strength: 4/10 - Digital Paper Bag 💀 – A toddler with a dictionary could break this in seconds
+  Issues found:
 
-Issues found:
-- ❌ Too short, rookie. I could brute-force this in my sleep 😴
-- ❌ No digits? A 5-year-old could guess this 📟
-- ❌ Add some spice, bro. Special chars are the 🔑 to chaos.
+    - ❌ Too short, rookie. I could brute-force this in my sleep 😴
+    - ❌ No uppercase? Even script kiddies would laugh at this 🙄
+    - ❌ No digits? A 5-year-old could guess this 📟
+    - ❌ No special characters? Add some spice, bro 🔥
 
-⚠️ Found in 333 data breaches! Not safe.
-🛡️ Estimated Crack Time: 19 seconds
 
-✨ Suggested Strong Password: MhIdnW'SDA
+  ⚠ Found in 120226 data breaches! Not safe.
 
-═══════════════════════════════════════════════════
-Press any key to exit...
-\`\`\`
+  🛡 Estimated Crack Time: Less than a second ⚠ – basically already cracke
+d ═══════════════════════════════════════════════════
+
+  ✨ Suggested Strong Password: Okn81Hg2
+
+
+
+
+
+
+  ═══════════════════════════════════════════════════
+
+  Press any key to exit...
+
+```
 
 ---
 
@@ -104,15 +113,8 @@ If you want to contribute to this project, feel free to fork the repository, cre
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## Contact
 
 Feel free to reach out with any questions or suggestions. You can contact me at:
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- GitHub: [your-username](https://github.com/your-username)
+- GitHub: [Kraton17](https://github.com/Kraton17)
