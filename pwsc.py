@@ -141,7 +141,7 @@ def main(stdscr):
 
     # Header
     stdscr.addstr(1, 2, "═══════════════════════════════════════════════════", curses.color_pair(1))
-    stdscr.addstr(2, 10, "     Password Strength Checker (PWSC) ", curses.color_pair(1) | curses.A_BOLD)
+    stdscr.addstr(2, 10, "     Password Strength Checker  ", curses.color_pair(1) | curses.A_BOLD)
     stdscr.addstr(3, 2, "═══════════════════════════════════════════════════", curses.color_pair(1))
 
     # Input
@@ -153,7 +153,7 @@ def main(stdscr):
 
     # Re-draw Header
     stdscr.addstr(1, 2, "═══════════════════════════════════════════════════", curses.color_pair(1))
-    stdscr.addstr(2, 10, "     Password Strength Checker (PWSC) ", curses.color_pair(1) | curses.A_BOLD)
+    stdscr.addstr(2, 10, "     Password Strength Checker  ", curses.color_pair(1) | curses.A_BOLD)
     stdscr.addstr(3, 2, "═══════════════════════════════════════════════════", curses.color_pair(1))
 
     strength, issues, score = check_password_strength(password)

@@ -1,17 +1,17 @@
-PWSC - Password Strength Checker
+# PWSC - Password Strength Checker
 
-**PWSC** is a Python-based terminal application that evaluates the strength of a given password, checks if it has been involved in any data breaches, estimates its crack time, and suggests a stronger password if necessary.
+PWSC is a Python-based terminal application that evaluates the strength of a given password, checks if it has been involved in any data breaches, estimates its crack time, and suggests a stronger password if necessary.
 
-This tool is built to help users understand how secure their passwords are and offers suggestions to make them more secure. It checks for common password vulnerabilities, such as lack of uppercase, digits, or special characters, and recommends a more robust alternative when needed.
+This tool helps users understand how secure their passwords are and offers suggestions to make them more secure. It checks for common password vulnerabilities such as lack of uppercase, digits, or special characters, and recommends a more robust alternative when needed.
 
 ---
 
 ## Features
 
-- **Password Strength Evaluation**: Rates the strength of a password on a scale from 0 to 10 based on various criteria.
-- **Breach Check**: Checks if the password has been part of any known data breaches using the Have I Been Pwned API.
-- **Crack Time Estimate**: Estimates how long it would take for a password to be cracked by brute force.
-- **Password Suggestions**: If the password is weak, the tool generates a stronger version with added complexity.
+- **Password Strength Evaluation:** Rates the strength of a password on a scale from 0 to 10 based on various criteria.
+- **Breach Check:** Checks if the password has been part of any known data breaches using the Have I Been Pwned API.
+- **Crack Time Estimate:** Estimates how long it would take for a password to be cracked by brute force.
+- **Password Suggestions:** If the password is weak, the tool generates a stronger version with added complexity.
 
 ---
 
@@ -19,90 +19,85 @@ This tool is built to help users understand how secure their passwords are and o
 
 ### Prerequisites
 
-Before running the project, you need to install the following dependencies:
+- Python 3.6+ (Make sure you have Python 3 installed)
+- `requests` module (for interacting with the Have I Been Pwned API)
 
-1. Python 3.6+ (Make sure you have Python 3 installed on your machine).
-2. Requests module to interact with the `Have I Been Pwned` API.
+### Steps
 
-You can install the dependencies using the following command:
+1. Clone the repository:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    git clone https://github.com/Kraton17/PWSC-Password-Strength-Checker.git
+    cd PWSC-Password-Strength-Checker
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ---
 
 ## Usage
 
-### Running the Tool
+Run the script using:
 
-1. Clone the repository to your local machine:
+```bash
+python pwsc.py
+```
 
-    ```bash git clone https://github.com/your-username/PWSC-Password-Strength-Checker.git 
-    cd PWSC-Password-Strength-Checker```
-
-2. Run the script with the following command:
-
-    ```bash
-    python pwsc.py
-    ```
-
-3. Enter a password when prompted, and the tool will display its strength, any issues, estimated crack time, and if it's been breached. If necessary, it will also suggest a stronger password.
+- Enter a password when prompted.
+- The tool will display:
+  - Password strength
+  - Issues found
+  - Estimated crack time
+  - Whether the password has been found in any data breaches
+  - Suggest a stronger password if necessary.
 
 ---
 
 ## How It Works
 
-1. **Password Strength Check**: 
-    - The strength is calculated based on several factors like length, use of uppercase, lowercase, digits, and special characters.
-    - The strength is rated on a scale from 0 to 10, with explanations for the weaknesses.
+- **Password Strength Check:**
+  - Evaluates based on length, uppercase, lowercase, digits, special characters.
+  - Scores the password from 0 to 10, with explanations for weaknesses.
 
-2. **Breach Check**:
-    - The tool checks if the password has appeared in any data breaches using the Have I Been Pwned API (using the SHA-1 hash of the password).
+- **Breach Check:**
+  - Checks if the password appeared in any known data breaches (using SHA-1 hash).
 
-3. **Crack Time Estimate**:
-    - Based on the complexity of the password, the tool estimates how long it would take to crack the password using brute force.
+- **Crack Time Estimate:**
+  - Calculates estimated brute-force crack time based on complexity.
 
-4. **Password Suggestions**:
-    - If the password is weak, the tool generates a stronger, more complex version of the password.
+- **Password Suggestions:**
+  - Generates a stronger, more complex password if necessary.
 
 ---
 
 ## Example Output
-```bash
 
-  ═══════════════════════════════════════════════════
-               Password Strength Checker (PWSC) 
-  ═══════════════════════════════════════════════════
+```
+═══════════════════════════════════════════════════
+          Password Strength Checker 
+═══════════════════════════════════════════════════
 
-  Password Strength: 2/10 - Digital Paper Bag 💀
-    → A toddler with a dictionary could break this in seconds
-  ═══════════════════════════════════════════════════
+Password Strength: 2/10 - Digital Paper Bag 💀
+→ A toddler with a dictionary could break this in seconds
 
-  Issues found:
+Issues found:
+- ❌ Too short, rookie. I could brute-force this in my sleep 😴
+- ❌ No uppercase? Even script kiddies would laugh at this 🙄
+- ❌ No digits? A 5-year-old could guess this 📟
+- ❌ No special characters? Add some spice, bro 🔥
 
-    - ❌ Too short, rookie. I could brute-force this in my sleep 😴
-    - ❌ No uppercase? Even script kiddies would laugh at this 🙄
-    - ❌ No digits? A 5-year-old could guess this 📟
-    - ❌ No special characters? Add some spice, bro 🔥
+⚠ Found in 120226 data breaches! Not safe.
+🛡 Estimated Crack Time: Less than a second ⚠ – basically already cracked
 
+✨ Suggested Strong Password: Okn81Hg2
 
-  ⚠ Found in 120226 data breaches! Not safe.
+═══════════════════════════════════════════════════
 
-  🛡 Estimated Crack Time: Less than a second ⚠ – basically already cracked
-  ═══════════════════════════════════════════════════
-
-  ✨ Suggested Strong Password: Okn81Hg2
-
-
-
-
-
-
-  ═══════════════════════════════════════════════════
-
-  Press any key to exit...
-
+Press any key to exit...
 ```
 
 ---
@@ -115,6 +110,6 @@ If you want to contribute to this project, feel free to fork the repository, cre
 
 ## Contact
 
-Feel free to reach out with any questions or suggestions. You can contact me at:
+Feel free to reach out with any questions or suggestions!
 
 - GitHub: [Kraton17](https://github.com/Kraton17)
